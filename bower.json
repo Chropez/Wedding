@@ -1,0 +1,22 @@
+{
+  "name": "Wedding",
+  "version": "0.0.0",
+  "authors": [
+    "Zunzap <chlo1259@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.2.0",
+    "modernizr": "~2.8.3",
+    "skrollr": "~0.6.27",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
+  }
+}

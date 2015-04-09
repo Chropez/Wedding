@@ -1,0 +1,17 @@
+{
+  "name": "Wedding",
+  "version": "0.0.0",
+  "description": "Christophers & Ellinors Weeding 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.4",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

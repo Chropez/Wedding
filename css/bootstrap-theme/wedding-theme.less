@@ -1,0 +1,341 @@
+@secondary-font :  "Amatic SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+body, .btn, input, textarea {
+	letter-spacing: 2px;
+}
+
+.page-footer {
+	padding: 30px;
+	height: 100px;
+	text-align: center;
+}
+
+.navbar-brand {
+	margin-right: 30px;
+}
+
+.secondary-font {
+	font-family: @secondary-font ;
+}
+
+#first-section > div:first-child {
+	padding: 0 20px;
+	height: 458px;
+}
+
+.img-height-responsive {
+	display: block;
+    width: auto;
+    max-height: 100%;
+}
+
+.page-section {
+	width: 100%;
+	//height: 1080px; 
+	//border: 1px solid black;
+	position: relative;
+	display: block;
+	background-color: white;
+
+	> div:first-child {
+		padding: 20px 5px 0;
+		.container ;
+	}
+
+	.page-image, .page-text {
+		padding: 0 30px; 
+	}
+
+	.page-image {
+		img{
+			margin: auto;
+		}
+	}
+
+	header>h1 {
+		text-align: center;
+		margin: 20px 0 0;
+	}
+}
+
+.page-section-content {
+
+}
+
+.page-section.page-section-dummy {
+	z-index: -1;
+}
+
+.scroll-down-wrapper {
+	margin-top: 30px;
+
+	.scroll-down-text {
+		font-family: @secondary-font ;
+		font-size: @font-size-h6 ;
+	}
+
+	.scroll-caret {
+		color : @gray;
+	}	
+}
+
+#first-section {
+	background-color: @body-bg;
+	padding-top: 0px;
+
+	h1 {
+		margin-bottom: 0px;
+		font-family:  @secondary-font;
+	}
+
+	h4 {
+		margin-top: 0px;
+		margin-bottom: 20px;
+
+		font-family:  @secondary-font;
+	}
+
+	.line {
+		line-height: 10px;
+		position: relative;
+		top: -18px;
+	}
+
+	.date {
+		margin: 0;
+	}
+
+	#save-the-date-text {
+		font-family:  @secondary-font;
+	}
+
+	.wedding-dates-wrapper {
+		background-image: url('../img/blad.png');
+		background-repeat: no-repeat;
+		background-size:cover;
+		padding: 10px;
+		margin: 0 20px;
+	}
+
+}
+
+body {
+	&.navbar-relative {
+		#main-navbar.affix-top {
+			position: relative;
+		}
+
+		#main-navbar.affix {
+			position: fixed;
+			top: 0;
+		}
+
+
+
+		#first-dummy-section {
+			display: none;
+		}
+
+	}
+	&.navbar-bottom {
+		#main-navbar.affix-top {
+			position: absolute;
+			bottom:0px;
+		}
+		#main-navbar.affix {
+			position: fixed;
+			top: 0;
+		}
+	}
+
+}
+
+#main-navbar {
+	width: 100%;
+	margin-bottom: 0px;
+	z-index: 100;
+	
+}
+
+#section-two {
+	background-color: white;
+}
+
+.red-heart {
+	color: #B61212;
+}
+
+
+#about-us {
+	background-color: #FFE9ED ; //pink
+	.page-image img {
+		width: 500px;
+	}
+}
+
+#wedding {
+	background-color: #C6F5CC ; //green
+	.page-image img {
+		width: 200px;
+	}	
+}
+
+#living {
+	background-color: #FFFDCD ; //yellow
+	.page-image img {
+		width: 200px;
+	}
+}
+
+#gifts {
+	background-color: #E9FCFD ; //light blue
+	#ranunkel {
+		width: 100px;
+	}
+	#vitsippa {
+		width: 200px;
+	}
+}
+
+#invite {
+	background-color: #ECFFCB ; //booger
+	.page-image img {
+	}
+
+
+	.page-text {
+		padding: 30px;
+	}
+}
+
+#contact {
+	background-color: #F9E2FC ; //purple
+	.page-image img {
+		//width: 500px;
+	}
+
+	.contact-block {
+		margin-bottom : 20px;
+	}
+}
+
+
+#first-section {
+	&.static {
+		position: static ;
+	} 
+	&.relative {
+		position: relative;
+	}
+}
+
+#first-dummy-section {
+	&.static {
+		position: fixed;
+	} 
+	&.relative {
+		position: relative;
+	}
+	&.hidden {
+		position: hidden;
+	}
+}
+
+@media (min-width: @screen-md-min){
+
+	> div:first-child {
+		padding: 100px;
+	}
+
+	.page-section {
+		z-index: 10;
+		display: table;
+		header>h1 {
+			text-align: center;
+		}
+
+		.page-image {
+			padding-top: 40px;
+		}
+	}
+
+	.page-section-content {
+		vertical-align: middle;	
+	}
+
+
+}
+
+
+@media (min-width: @screen-md-min){
+
+	#first-section {
+		display: block;
+		position: fixed; 
+		z-index: 9;
+		> div:first-child {
+			padding: 0 20px 100px;
+			height: 574px;
+		}
+		.overlay {
+			background-image: url('../img/blad.png');
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.wedding-dates-wrapper {
+			background-image: none;
+			margin: 0;
+			padding: 0;		
+		}
+
+		#save-the-date-text {
+			margin-top: 50px;
+		}
+	}
+	
+}
+
+@media (min-width: @screen-lg-min) {
+	#first-section .overlay	{
+		width: 1000px;
+		margin: auto;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+
+	#wedding {
+		.page-image img {
+			width: 300px;
+		}	
+	}
+
+
+	#living {
+		.page-image img {
+			width: 500px;
+			margin-top: 200px;
+		}
+	}
+
+	#gifts {
+		#ranunkel {
+			width: 200px;
+		}
+		#vitsippa {
+			width: 350px;
+		} 
+	}
+
+}
+
+@media (max-width: @screen-sm-max) {
+	#first-section {
+		.page-section-content {
+			display: block;
+		}
+
+		h1 {
+			font-size: 55px;
+		}
+	}
+}
