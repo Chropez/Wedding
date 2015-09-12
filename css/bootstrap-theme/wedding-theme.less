@@ -72,6 +72,10 @@ body, .btn, input, textarea {
 	.scroll-down-text {
 		font-family: @secondary-font ;
 		font-size: @font-size-h6 ;
+
+		a {
+			color: #D0E4F4;
+		}
 	}
 
 	.scroll-caret {
@@ -80,41 +84,87 @@ body, .btn, input, textarea {
 }
 
 #first-section {
-	background-color: @body-bg;
 	padding-top: 0px;
+	background-color: #1DCCA1;
 
 	h1 {
 		margin-bottom: 0px;
 		font-family:  @secondary-font;
 	}
 
-	h4 {
+	
+	#to-our-wedding {
 		margin-top: 0px;
 		margin-bottom: 20px;
-
 		font-family:  @secondary-font;
+		font-size: 40px;
 	}
 
-	.line {
-		line-height: 10px;
+	.page-image {
+		img {
+			-moz-transform: scaleX(-1);
+	        -ms-filter: "FlipH";
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	    }
+	}
+
+	.page-text {
+		padding-top: 40px;
+		img {
+			width: 100%;
+		}
+	}
+
+	#to-our-wedding, #name-date-container .name{
+		color: #4D4D4D;
+	}
+
+	#name-date-container{
 		position: relative;
-		top: -18px;
+		height: 200px;
+		
+		.name, .date {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+
+
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			        
+  			-webkit-box-pack: center;
+  			-webkit-justify-content: center;
+  			    -ms-flex-pack: center;
+  			        justify-content: center;
+
+			& div {
+				display: inline-block;
+			}
+		}
+
+		
 	}
 
-	.date {
-		margin: 0;
-	}
+	.name {
+			font-size: 20px;
+		}
 
-	#save-the-date-text {
-		font-family:  @secondary-font;
-	}
-
-	.wedding-dates-wrapper {
-		background-image: url('../img/blad.png');
-		background-repeat: no-repeat;
-		background-size:cover;
-		padding: 10px;
-		margin: 0 20px;
+	.date{
+		color: #34C29B;
+		font-size: 70px;
+		line-height: 70px;
+		font-style: italic;
+		font-weight: bold;
 	}
 
 }
@@ -176,7 +226,7 @@ body {
 #wedding {
 	background-color: #C6F5CC ; //green
 	.page-image img {
-		width: 200px;
+		width: 370px;
 	}	
 }
 
@@ -264,6 +314,7 @@ body {
 	}
 
 
+
 }
 
 
@@ -277,31 +328,37 @@ body {
 			padding: 0 20px 100px;
 			height: 574px;
 		}
-		.overlay {
-			background-image: url('../img/blad.png');
-			background-repeat: no-repeat;
-			background-size:cover;
-		}
-		.wedding-dates-wrapper {
-			background-image: none;
-			margin: 0;
-			padding: 0;		
+
+		.page-image {
+			width: 400px;
+			padding-right: 0;
+			padding-top: 40px;
+
 		}
 
-		#save-the-date-text {
-			margin-top: 50px;
+		#to-our-wedding {
+			font-size: 55px;
+		}
+
+		.name {
+			font-size: 35px;
+		}
+
+		.date{
+			font-size: 120px;
+			line-height: 120px;
 		}
 	}
 	
 }
 
 @media (min-width: @screen-lg-min) {
-	#first-section .overlay	{
+	/*#first-section .overlay	{
 		width: 1000px;
 		margin: auto;
 		padding-top: 30px;
 		padding-bottom: 10px;
-	}
+	}*/
 
 	#wedding {
 		.page-image img {

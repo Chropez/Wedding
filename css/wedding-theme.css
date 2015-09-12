@@ -6677,39 +6677,79 @@ textarea {
   font-family: "Amatic SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
+.scroll-down-wrapper .scroll-down-text a {
+  color: #D0E4F4;
+}
 .scroll-down-wrapper .scroll-caret {
   color: #666666;
 }
 #first-section {
-  background-color: #a7fce7;
   padding-top: 0px;
+  background-color: #1DCCA1;
 }
 #first-section h1 {
   margin-bottom: 0px;
   font-family: "Amatic SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#first-section h4 {
+#first-section #to-our-wedding {
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: "Amatic SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
 }
-#first-section .line {
-  line-height: 10px;
+#first-section .page-image img {
+  -moz-transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+#first-section .page-text {
+  padding-top: 40px;
+}
+#first-section .page-text img {
+  width: 100%;
+}
+#first-section #to-our-wedding,
+#first-section #name-date-container .name {
+  color: #4D4D4D;
+}
+#first-section #name-date-container {
   position: relative;
-  top: -18px;
+  height: 200px;
+}
+#first-section #name-date-container .name,
+#first-section #name-date-container .date {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#first-section #name-date-container .name div,
+#first-section #name-date-container .date div {
+  display: inline-block;
+}
+#first-section .name {
+  font-size: 20px;
 }
 #first-section .date {
-  margin: 0;
-}
-#first-section #save-the-date-text {
-  font-family: "Amatic SC", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-#first-section .wedding-dates-wrapper {
-  background-image: url('../img/blad.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-  margin: 0 20px;
+  color: #34C29B;
+  font-size: 70px;
+  line-height: 70px;
+  font-style: italic;
+  font-weight: bold;
 }
 body.navbar-relative #main-navbar.affix-top {
   position: relative;
@@ -6750,7 +6790,7 @@ body.navbar-bottom #main-navbar.affix {
   background-color: #C6F5CC ;
 }
 #wedding .page-image img {
-  width: 200px;
+  width: 370px;
 }
 #living {
   background-color: #FFFDCD ;
@@ -6822,27 +6862,29 @@ body.navbar-bottom #main-navbar.affix {
     padding: 0 20px 100px;
     height: 574px;
   }
-  #first-section .overlay {
-    background-image: url('../img/blad.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  #first-section .page-image {
+    width: 400px;
+    padding-right: 0;
+    padding-top: 40px;
   }
-  #first-section .wedding-dates-wrapper {
-    background-image: none;
-    margin: 0;
-    padding: 0;
+  #first-section #to-our-wedding {
+    font-size: 55px;
   }
-  #first-section #save-the-date-text {
-    margin-top: 50px;
+  #first-section .name {
+    font-size: 35px;
+  }
+  #first-section .date {
+    font-size: 120px;
+    line-height: 120px;
   }
 }
 @media (min-width: 1200px) {
-  #first-section .overlay {
-    width: 1000px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
+  /*#first-section .overlay	{
+		width: 1000px;
+		margin: auto;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}*/
   #wedding .page-image img {
     width: 300px;
   }

@@ -6,7 +6,7 @@
         $phone = trim($_POST['phone']);
         $email = trim('info@christopherellinor.se');
         $participates = trim($_POST['participates']) == 'yes' ? 'Ja' : 'Nej';
-        $drink = trim($_POST['phone']);
+        $drink = trim($_POST['drink']);
         $msg = trim($_POST['message']);
 
         $subject    =   "Subject: =?UTF-8?Q?".imap_8bit("OSA från webb - " . $name)."?=";
@@ -18,7 +18,7 @@
         $message =  "Namn: $name <br>". 
                     "Deltar: $participates <br>".
                     "Telefon: $phone<br>".
-                    "Dryck: " . nl2br($drink);
+                    "Dryck: " . nl2br($drink)."<br>".
                     "Meddelande: " . nl2br($msg);
 
         $message .= "<br><br><br>Logga in på <a href='https://mail.one.com/'>mail.one.com</a> för att komma åt mailkontot" ; 

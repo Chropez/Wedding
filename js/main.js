@@ -47,7 +47,7 @@ $(document).ready(function(){
 			'dataType': 'json'
 		}).done(function(data){
 			if(data.success)
-				alert('allt gick bra!');
+				alert('Tack för din anmälan!');
 			else
 				alert('Något gick fel! Försök igen senare')		
 		}).fail(function(data){
